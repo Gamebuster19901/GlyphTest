@@ -12,9 +12,11 @@ import java.nio.file.Path;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = "glyph", name = "GlyphTest")
+@Mod(modid = "glyph", name = "GlyphTest", version = "1")
 public class Main {
 	
 	@EventHandler
@@ -28,6 +30,16 @@ public class Main {
 			if(e1 instanceof FileAlreadyExistsException){return;}
 			throw new IOError(e1);
 		}
+	}
+	
+	@EventHandler
+	public void init(FMLInitializationEvent e) {
+		
+	}
+	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent e) {
+		
 	}
 	
 }
