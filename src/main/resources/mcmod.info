@@ -1,0 +1,15 @@
+[
+{
+  "modid": "glyph",
+  "name": "GlyphTest",
+  "description": "A test mod to test the loading of glyph_sizes.bin",
+  "version": "1",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Gamebuster1990"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
